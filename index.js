@@ -17,7 +17,6 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT
 
-//mongo connection 
 MongoConnect();
 
 //middleWare:
