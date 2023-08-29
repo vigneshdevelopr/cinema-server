@@ -28,5 +28,10 @@ app.use("/",DashRouter);
 app.use("/login",loginUser);
 app.use("/signup",signupUser); 
 app.use("/logout", LogoutRouter);
+
+app.get('/',(req,res)=>{
+    return res.status(200).send('your server has been hosted successfully')
+}
+)
 //listening
 app.listen(PORT, ()=>console.log(`Your Server will be lisenting on port http://localhost:${PORT}`)); 
